@@ -19,9 +19,9 @@
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
   </head>
 
   <body>
@@ -33,10 +33,9 @@
       <!-- Begin page content -->
       <div class="container">
         <div class="page-header">
-          <h1>Sticky footer</h1>
+          <h1>Install buddycloud</h1>
         </div>
 
-        <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Install_Requirements"><span class="tocnumber">1</span> <span class="toctext">Install Requirements</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Getting_help"><span class="tocnumber">2</span> <span class="toctext">Getting help</span></a></li>
@@ -85,7 +84,6 @@
 </li>
 <li class="toclevel-1 tocsection-31"><a href="#Final_steps"><span class="tocnumber">9</span> <span class="toctext">Final steps</span></a></li>
 </ul>
-</td></tr></tbody></table>
 <h2 id="Install_Requirements"> Install Requirements </h2>
 <dl><dt>Your own server with an internet routable IP address. 
 </dt><dd> see <a href="/wiki/buddycloud_hosting_options" title="buddycloud hosting options">buddycloud hosting options</a> for other ways to host your install.
@@ -168,13 +166,13 @@ iptables -A INPUT  -m state --state NEW -s 0.0.0.0/0 -d &lt;your server address&
 iptables -A OUTPUT -m state --state NEW -s &lt;your server address&gt; -d 0.0.0.0/0 -p tcp --dport 5269 -j ACCEPT 
 </code>
 </pre>
-</p><p>If your hosting provider has its own firewall in addition to the firewall on your server (like on <a rel="nofollow" class="external text" href="http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/using-network-security.html">Amazon EC2</a> instances), make sure to also open TCP ports 80, 43, 5222 and 5269 there.
+</p><p>If your hosting provider has its own firewall in addition to the firewall on your server (like on <a rel="nofollow"  href="http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/using-network-security.html">Amazon EC2</a> instances), make sure to also open TCP ports 80, 43, 5222 and 5269 there.
 </p>
 <h2 id="Prosody_Setup"> Prosody Setup </h2>
 <p><span style="color:green">Estimated time: <b>10 mins</b></span>
 </p>
 <ul><li> alternative: <a href="/wiki/Installing_buddycloud_on_ejabberd" title="Installing buddycloud on ejabberd">Installing buddycloud on ejabberd</a>
-</li><li> alternative: <a rel="nofollow" class="external text" href="http://prosody.im/doc/install">official Prosody install guide</a> (good for older distributions)
+</li><li> alternative: <a rel="nofollow"  href="http://prosody.im/doc/install">official Prosody install guide</a> (good for older distributions)
 </li><li> alternative: Prosody with <a href="/wiki/LDAP_authentication" title="LDAP authentication">LDAP authentication</a>
 </li><li> alternative: <a href="/wiki/Installing_buddycloud_on_openfire" title="Installing buddycloud on openfire">Installing buddycloud on openfire</a>
 </li></ul>
@@ -285,7 +283,7 @@ node --version
 # The buddycloud-server requires nodejs 0.8.*
 </code>
 </pre>
-</p><p>Download the latest buddycloud-server package from <a rel="nofollow" class="external text" href="http://downloads.buddycloud.com/packages/debian/releases/buddycloud-server/">downloads.buddycloud.com</a>
+</p><p>Download the latest buddycloud-server package from <a rel="nofollow"  href="http://downloads.buddycloud.com/packages/debian/releases/buddycloud-server/">downloads.buddycloud.com</a>
 <pre class="prettyprint">
 <code class="language-bash">
 sudo dpkg -i buddycloud-server*.deb; 
@@ -357,7 +355,7 @@ sudo apt-get install libpq5  libicu48  libicu-dev libxml2-dev libssl1.0.0 \
 node --version # The buddycloud API requires nodejs 0.8.*
 </code>
 </pre>
-</p><p>Download the latest buddycloud-http-api package from <a rel="nofollow" class="external text" href="http://downloads.buddycloud.com/packages/debian/nightly/buddycloud-http-api/">downloads.buddycloud.com</a>
+</p><p>Download the latest buddycloud-http-api package from <a rel="nofollow"  href="http://downloads.buddycloud.com/packages/debian/nightly/buddycloud-http-api/">downloads.buddycloud.com</a>
 </p><p><pre class="prettyprint">
 <code class="language-bash">
 sudo dpkg -i buddycloud-http-api*.deb; 
@@ -399,7 +397,7 @@ tail -F /var/log/buddycloud-http-api/buddycloud-http-api.log
 </li><li> Alternative: <a href="/wiki/buddycloud_SSL_setup" title="buddycloud SSL setup">buddycloud SSL setup</a>
 </li></ul>
 <h3 id="Install_3">Install</h3>
-<p>Download the latest buddycloud-webclient package from <a rel="nofollow" class="external text" href="http://downloads.buddycloud.com/packages/debian/releases/buddycloud-webclient/">downloads.buddycloud.com</a>
+<p>Download the latest buddycloud-webclient package from <a rel="nofollow"  href="http://downloads.buddycloud.com/packages/debian/releases/buddycloud-webclient/">downloads.buddycloud.com</a>
 </p><p><pre class="prettyprint">
 <code class="language-bash">
 sudo dpkg -i buddycloud-webclient*.deb;
@@ -417,10 +415,10 @@ sudo service apache2 reload
 </pre>
 </p>
 <h3 id="Test_5">Test</h3>
-<ul><li> <a rel="nofollow" class="external text" href="https://www.ssllabs.com/ssltest/index.html">check your SSL setup</a>
-</li><li> open <code><a rel="nofollow" class="external free" href="https://EXAMPLE.COM/">https://EXAMPLE.COM/</a></code> in your browser: you should see the login screen
-</li><li> open <code><a rel="nofollow" class="external free" href="https://EXAMPLE.COM/team@topics.buddycloud.org">https://EXAMPLE.COM/team@topics.buddycloud.org</a></code> in your browser: you should see an open channel displayed
-</li></ul>
+<ul><li>If you are running with SSL, <a href="https://www.ssllabs.com/ssltest/index.html">check your SSL setup</a></li>
+  <li> open <code><a rel="nofollow" class="external free" href="http://EXAMPLE.COM/">http://EXAMPLE.COM/</a></code> in your browser: you should see the login screen</li>
+  <li> open <code><a rel="nofollow" class="external free" href="http://EXAMPLE.COM/team@topics.buddycloud.org">http://EXAMPLE.COM/team@topics.buddycloud.org</a></code> in your browser: you should see an open channel displayed</li>
+</ul>
 <h3 id="Debug_3">Debug</h3>
 <p><pre class="prettyprint">
 <code class="language-bash">
@@ -431,9 +429,8 @@ tail -F /var/log/apache2/EXAMPLE.COM-error.log \
 </pre>
 </code>
 </p>
-<h2 id="Final_steps"> Final steps </h2>
-<p>You are done!
-</p><p>Log-into your buddycloud node at <a rel="nofollow" class="external free" href="https://EXAMPLE.COM/">https://EXAMPLE.COM/</a> and follow your first channels. And don't forget to add your server to the list of <a href="/w/index.php?title=buddycloud_enabled_domains&amp;action=edit&amp;redlink=1" class="new" title="buddycloud enabled domains (page does not exist)">buddycloud enabled domains</a>.
+<h2 id="Final_steps">Final steps</h2>
+<p>That's it! Log-into your buddycloud node at <a rel="nofollow" class="external free" href="http://EXAMPLE.COM/">http://EXAMPLE.COM/</a> and follow your first channels.</a>.
 </p>
 </div>
       </div>
