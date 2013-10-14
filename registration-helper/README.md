@@ -1,0 +1,1 @@
+sign-up-domains.json is used by buddycloud clients (for example buddycloud for Android), to select domains to register on.
